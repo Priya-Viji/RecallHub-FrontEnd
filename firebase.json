@@ -1,0 +1,33 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "recallhub-445ca",
+          "appId": "1:965207700737:android:298187b4052651a7da1700",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "recallhub-445ca",
+          "configurations": {
+            "android": "1:965207700737:android:298187b4052651a7da1700",
+            "ios": "1:965207700737:ios:24fdd84861299beeda1700",
+            "macos": "1:965207700737:ios:24fdd84861299beeda1700",
+            "web": "1:965207700737:web:c9d1184f5dfbe724da1700",
+            "windows": "1:965207700737:web:f074e5c8b3cd257ada1700"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

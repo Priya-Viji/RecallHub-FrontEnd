@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'sidebar_menu.dart';
+import 'package:recallhub_frontend/features/dashboard/widgets/sidebar_menu.dart';
 
 class CollapsibleSidebar extends StatefulWidget {
   final String activeRoute;
@@ -27,11 +27,11 @@ class _CollapsibleSidebarState extends State<CollapsibleSidebar> {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 300),
       curve: Curves.easeInOut,
       width: isCollapsed ? 70 : 250,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.grey.shade50, // subtle background so sidebar is visible
         border: Border(
           right: BorderSide(color: Colors.grey.shade300, width: 1),
         ),

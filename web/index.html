@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -27,12 +28,31 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>recallhub_frontend</title>
   <link rel="manifest" href="manifest.json">
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDcm8FMSeTkP9CmY54msgNCHJpo6w4WWZo",
+      authDomain: "recallhub-445ca.firebaseapp.com",
+      projectId: "recallhub-445ca",
+      storageBucket: "recallhub-445ca.firebasestorage.app",
+      messagingSenderId: "965207700737",
+      appId: "1:965207700737:web:c9d1184f5dfbe724da1700",
+      measurementId: "G-NVQ3KQQC4B"
+    };
+    // Initialize Firebase 
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app); </script>
 </head>
+
 <body>
   <script src="flutter_bootstrap.js" async></script>
 </body>
+
 </html>
